@@ -48,6 +48,7 @@ a{
 .fa-paperclip{
   color:rgb(202, 200, 198);
   margin-right: 15px;
+  cursor: pointer;
 }
 .fa-paperclip:hover {
   color: rgb(91, 100, 235)

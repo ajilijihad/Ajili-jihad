@@ -1,6 +1,7 @@
 export class Product {
     constructor( 
-    public  checked:boolean, 
+    public  checked:boolean,
+     public img : string, 
      public name : string,  
      public phone : string, 
      public SSN : string, 

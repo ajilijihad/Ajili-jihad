@@ -1,6 +1,7 @@
 import { Component, NgModule } from '@angular/core';
 import { productList } from './Data';
 import { Product } from './Product';
+import { CountService } from './table.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -18,7 +19,7 @@ export class AppComponent {
    pageStart : number = 1;
    inputName : string = '';
    count: number=0 ;
-   constructor( ){
+   constructor(private countService:CountService  ){
          this.filteredItems = productList;
          this.init();
          
@@ -91,11 +92,6 @@ export class AppComponent {
     }
     
     changed() {
-      this.count = 0;
-      this.filteredItems.forEach(item => {
-        if (item['checked']) {
-          this.count = this.count + 1;
-        }
-      })
+      this.count=this.countService.changed()
     }
 }

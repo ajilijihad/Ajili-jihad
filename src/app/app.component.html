@@ -46,21 +46,21 @@
               <span class="checkmark"></span>
             </label>
 
-            <img src="/assets/images/pic.jpg" width="20px" height="18px" style="margin-left: 40px;"/> {{item.name}}</td>
+            <img [src]="item.img" width="25px" height="25px" style="margin-left: 30px;"/> {{item.name}}</td>
            <td >{{item.phone}}</td>
            <td>{{item.SSN}}</td>
            <td>{{item.DOB}}</td>
            <td>{{item.Hired}}</td>
            <td>{{item.CDL}}</td>
-           <td><i style="color:rgb(236, 217, 191)" class="fa fa-line-chart" aria-hidden="true"></i></td>
-           <td><i style="color:rgb(124, 124, 123)"class="fa fa-tasks" aria-hidden="true"></i> {{item.CDLExp}}</td>
-           <td><i style="color:rgb(236, 235, 130)"class="fa fa-tasks" aria-hidden="true"> </i> {{item.med}}</td>
-           <td><i style="color:rgb(243, 126, 126)"class="fa fa-tasks" aria-hidden="true"></i> {{item.MVR}}</td>
+           <td><i style="color:rgb(236, 217, 191); cursor: pointer;" class="fa fa-line-chart" aria-hidden="true"></i></td>
+           <td><i style="color:rgb(124, 124, 123); cursor: pointer;"class="fa fa-tasks" aria-hidden="true"></i> {{item.CDLExp}}</td>
+           <td><i style="color:rgb(236, 235, 130); cursor: pointer;"class="fa fa-tasks" aria-hidden="true"> </i> {{item.med}}</td>
+           <td><i style="color:rgb(243, 126, 126); cursor: pointer;"class="fa fa-tasks" aria-hidden="true"></i> {{item.MVR}}</td>
            <td>
              <i class="fa fa-paperclip" aria-hidden="true"></i>
-             <i style="color:rgb(148, 145, 143);margin-right: 15px;"class="fa fa-file" aria-hidden="true"></i>
+             <i style="color:rgb(148, 145, 143);margin-right: 15px;; cursor: pointer;"class="fa fa-file" aria-hidden="true"></i>
              <div class="dropdown">
-               <i style="color:rgb(201, 199, 196);margin-right: 15px;"class="dropbtn fa fa-ellipsis-h" aria-hidden="true"></i> 
+               <i style="color:rgb(201, 199, 196);margin-right: 15px;; cursor: pointer;"class="dropbtn fa fa-ellipsis-h" aria-hidden="true"></i> 
                <div class="dropdown-content">
                  <a href="#"><i class="fa fa-pencil" aria-hidden="true"></i> Edit</a>
                  <a href="#"><i class="fa fa-plus" aria-hidden="true"></i> Add CDL</a>
